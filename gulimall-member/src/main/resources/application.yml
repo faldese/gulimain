@@ -1,0 +1,24 @@
+
+server:
+  port: 8000
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.239.129:3306/gulimall_ums
+    username: root
+    password: atznjsgj8
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  application:
+    name: gulimall-member
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath:/mapper/**/*.xml
+

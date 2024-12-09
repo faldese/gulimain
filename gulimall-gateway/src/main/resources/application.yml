@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      routes:
+        - id: bilibili_route
+          uri: https://www.bilibili.com
+          predicates:
+            - Query=url,bili
+        - id: baidu_route
+          uri: https://www.baidu.com
+          predicates:
+            - Query=url,baidu
+
+  application:
+    name: gulimall-gateway
+
+server:
+  port: 88

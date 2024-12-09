@@ -7,19 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="gulimail-coupon" />
-        <module name="gulimail-member" />
+        <module name="gulimall-coupon" />
+        <module name="gulimall-common" />
         <module name="renren-fast" />
-        <module name="gulimail-order" />
-        <module name="gulimain-ware" />
-        <module name="gulimail-product" />
+        <module name="gulimall-order" />
+        <module name="gulimall-ware" />
+        <module name="gulimall-member" />
+        <module name="gulimall-gateway" />
+        <module name="renren-generator" />
+        <module name="gulimall-product" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gulimall-common" options="" />
       <module name="renren-fast" options="-parameters" />
+      <module name="renren-generator" options="-parameters" />
     </option>
   </component>
 </project>
